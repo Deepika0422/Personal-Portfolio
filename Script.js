@@ -22,10 +22,6 @@ function closemenu() {
   sidemenu.style.right = "-170px";
 }
 
-function msg() {
-  alert("Message sent successfully");
-}
-
 const sideMenu = document.getElementById("side-menu");
 const menuLinks = document.querySelectorAll("#side-menu a");
 
