@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perosnal Portfolio</title>
+    <link rel="Stylesheet" href="Styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2bda3c3d37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, I'm <span>Deepika </span><br />
+            Perumal From Coimbatore.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/my-user.jpg" alt="" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-me">
+              Innovative Engineering Student with a passion for developing
+              creative solutions to complex problems. Dedicated to applying
+              technical skills and academic knowledge to deliver impactful and
+              sustainable solutions, while enhancing my expertise and
+              collaborating with diverse teams.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills',event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience',event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education',event)">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend</span><br />Crafting beautiful, responsive
+                  interfaces with clean and accessible code
+                </li>
+                <li>
+                  <span>Web Development</span><br />Building full-featured web
+                  apps with modern tech stacks.
+                </li>
+                <li>
+                  <span>Problem Solving</span><br />Cracking coding challenges
+                  with logic and Java expertise
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <!-- <li>
+                  <span>2021 - Current</span><br />Frontend Development Training
+                  at ET Institute.
+                </li>
+                <li><span>2019 - 2021</span><br />Team Lead at StartApp LLC</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Internship at ekart ecommerce
+                </li> -->
+                <li>
+                  <span>Smart India Hackathon (2022)</span> <br />Participated
+                  and selected in "Smart India Hackathon" for spearheading the
+                  development of a groundbreaking solution aimed at addressing
+                  the educational needs of nomadic communities, through the
+                  innovative use of technology.
+                </li>
+                <li>
+                  <span>Promt Infotech Internship (2023)</span><br />Web Design
+                  and Development Internship - Completed a 5-day online
+                  internship on web design and development provided by Prompt
+                  Infotech, gaining hands-on experience and a certification in
+                  web development fundamentals.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - current</span><br />Pursuing a BTech Degree in
+                  Information Technology at Government College of
+                  Technology,Coimbatore with a current CGPA of 9.13 and so far.
+                </li>
+                <li>
+                  <span>2022</span><br />Completed Higher Secondary Education at
+                  Wisdom Gates Matric Hr. Sec School,Salem with 96%.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="services-content">
+            <div class="ser_subtitle">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+            </div>
+            <br />
+            <p>
+              I design responsive and user-friendly static websites using HTML
+              and CSS. I focus on clean layouts, organized sections, and a good
+              user experience across devices.
+            </p>
+            <br />
+            <a href="#">Learn more</a>
+          </div>
+
+          <div class="services-content">
+            <div class="ser_subtitle">
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>Frontend Development</h2>
+            </div>
+            <br />
+            <p>
+              I build dynamic and interactive websites using HTML, CSS, and
+              JavaScript. Whether it's a form validation or interactive
+              portfolio, I ensure functionality and performance.
+            </p>
+            <br />
+            <a href="#">Learn more</a>
+          </div>
+
+          <div class="services-content">
+            <div class="ser_subtitle">
+              <i class="fa-brands fa-app-store"></i>
+              <h2>PHP & MySQL Integration</h2>
+            </div>
+            <br />
+            <p>
+              I develop backend-powered websites with PHP and MySQL to handle
+              user data, forms, and database operations. Perfect for student
+              project needs, registrations, and small business websites.
+            </p>
+            <br />
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Health Care Management Project</h3>
+              <p>
+                Developed a healthcare management system program coded in Java,
+                facilitating easy appointments scheduling for patients and
+                efficiency in healthcare delivery.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>GPA Calculator</h3>
+              <p>
+                Created a GPA calculator for showing the result of a single
+                semester in a webpage by using MySQL, PHP, HTML and CSS.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Event Registration Webpage</h3>
+              <p>
+                Developed a simple webpage using HTML, CSS to present upcoming
+                events, like photo gallery, fashion sales, and other activities.
+                Integrated a registration form to capture user details, all
+                while ensuring a cohesive and functional design along with a
+                user-friendly registration form which stores the details of the
+                user in databases and also implemented error handling for data
+                integrity using HTML, CSS, JavaScript, MySQL and PHP.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="#"> See More</a>
+          <div class="btn-layer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="col">
+          <div class="contact-left">
+            <div class="sub-title">Contact Me</div>
+            <p>
+              <i class="fa-solid fa-envelope"></i> deep.71772218108@gct.ac.in
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 8248984590</p>
+            <div class="icon-list">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <a href="images/DEEPIKA_RESUME.pdf" download class="btn btn2 cv"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <div class="form">
+              <form>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder=" Your Name"
+                  required
+                />
+                <br />
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <br />
+
+                <textarea
+                  type="text"
+                  name="Message"
+                  placeholder="Your Message"
+                ></textarea>
+                <button class="btn btn2" onclick="msg()">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
